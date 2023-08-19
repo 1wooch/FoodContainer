@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct FoodContainerApp: App {
+    
+    var model = PersistenceHandler.shared
+    
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

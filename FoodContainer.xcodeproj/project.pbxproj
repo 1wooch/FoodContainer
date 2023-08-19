@@ -14,6 +14,11 @@
 		DC0C504B2A90C92C00DA03D1 /* FoodContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C504A2A90C92C00DA03D1 /* FoodContainerTests.swift */; };
 		DC0C50552A90C92C00DA03D1 /* FoodContainerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C50542A90C92C00DA03D1 /* FoodContainerUITests.swift */; };
 		DC0C50572A90C92C00DA03D1 /* FoodContainerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C50562A90C92C00DA03D1 /* FoodContainerUITestsLaunchTests.swift */; };
+		DC0C50A72A91096000DA03D1 /* FMSDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC0C50A52A91096000DA03D1 /* FMSDB.xcdatamodeld */; };
+		DC0C50A92A91096F00DA03D1 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C50A82A91096E00DA03D1 /* Persistance.swift */; };
+		DC0C50AC2A910F3400DA03D1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C50AB2A910F3400DA03D1 /* DataModel.swift */; };
+		DC0C50AE2A91118C00DA03D1 /* FIFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C50AD2A91118C00DA03D1 /* FIFViewModel.swift */; };
+		DC0C50B02A91167D00DA03D1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0C50AF2A91167D00DA03D1 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		DC0C50502A90C92C00DA03D1 /* FoodContainerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodContainerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0C50542A90C92C00DA03D1 /* FoodContainerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodContainerUITests.swift; sourceTree = "<group>"; };
 		DC0C50562A90C92C00DA03D1 /* FoodContainerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodContainerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC0C50A62A91096000DA03D1 /* FMSDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FMSDB.xcdatamodel; sourceTree = "<group>"; };
+		DC0C50A82A91096E00DA03D1 /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		DC0C50AB2A910F3400DA03D1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		DC0C50AD2A91118C00DA03D1 /* FIFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIFViewModel.swift; sourceTree = "<group>"; };
+		DC0C50AF2A91167D00DA03D1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,10 @@
 		DC0C50382A90C92900DA03D1 /* FoodContainer */ = {
 			isa = PBXGroup;
 			children = (
+				DC0C50AA2A910CD200DA03D1 /* ViewModel */,
+				DC0C50A42A91094000DA03D1 /* ShoppingList */,
+				DC0C50A32A91093200DA03D1 /* FMS */,
+				DC0C50A22A91068500DA03D1 /* Data */,
 				DC0C50392A90C92900DA03D1 /* FoodContainerApp.swift */,
 				DC0C503B2A90C92900DA03D1 /* ContentView.swift */,
 				DC0C503D2A90C92C00DA03D1 /* Assets.xcassets */,
@@ -125,6 +139,39 @@
 				DC0C50562A90C92C00DA03D1 /* FoodContainerUITestsLaunchTests.swift */,
 			);
 			path = FoodContainerUITests;
+			sourceTree = "<group>";
+		};
+		DC0C50A22A91068500DA03D1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DC0C50A52A91096000DA03D1 /* FMSDB.xcdatamodeld */,
+				DC0C50A82A91096E00DA03D1 /* Persistance.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DC0C50A32A91093200DA03D1 /* FMS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FMS;
+			sourceTree = "<group>";
+		};
+		DC0C50A42A91094000DA03D1 /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		DC0C50AA2A910CD200DA03D1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC0C50AB2A910F3400DA03D1 /* DataModel.swift */,
+				DC0C50AD2A91118C00DA03D1 /* FIFViewModel.swift */,
+				DC0C50AF2A91167D00DA03D1 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +304,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC0C50AC2A910F3400DA03D1 /* DataModel.swift in Sources */,
 				DC0C503C2A90C92900DA03D1 /* ContentView.swift in Sources */,
+				DC0C50A92A91096F00DA03D1 /* Persistance.swift in Sources */,
+				DC0C50A72A91096000DA03D1 /* FMSDB.xcdatamodeld in Sources */,
+				DC0C50AE2A91118C00DA03D1 /* FIFViewModel.swift in Sources */,
 				DC0C503A2A90C92900DA03D1 /* FoodContainerApp.swift in Sources */,
+				DC0C50B02A91167D00DA03D1 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +635,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC0C50A52A91096000DA03D1 /* FMSDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC0C50A62A91096000DA03D1 /* FMSDB.xcdatamodel */,
+			);
+			currentVersion = DC0C50A62A91096000DA03D1 /* FMSDB.xcdatamodel */;
+			path = FMSDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DC0C502E2A90C92900DA03D1 /* Project object */;
 }
