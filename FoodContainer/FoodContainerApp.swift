@@ -11,11 +11,11 @@ import SwiftUI
 struct FoodContainerApp: App {
     
     var model = PersistenceHandler.shared
-    
+    @StateObject var FIFModel = FIFDmodel.shared
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(fifmodel:FIFModel)
         }
     }
 }

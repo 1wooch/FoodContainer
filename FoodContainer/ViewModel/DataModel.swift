@@ -17,4 +17,7 @@ class FIFDmodel: ObservableObject{
     @Published var category = ""
 
     static let shared = FIFDmodel()
+    init(){
+        
+    }
 }
